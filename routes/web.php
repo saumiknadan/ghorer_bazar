@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +22,16 @@ use App\Http\Controllers\HomeController;
 // });
 
 
+
+                        // frontend route
+
+// homepage route 
 Route::get('/', [HomeController::class,'index']);
+
+
+
+
+                        // backend route
+// dashboard route
+
+Route::get('/dashboard', [AdminController::class,'dashboard']);
