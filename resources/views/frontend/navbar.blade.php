@@ -5,13 +5,13 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Hot Deals</a></li>
-						<li><a href="#">Categories</a></li>
-						<li><a href="#">Laptops</a></li>
-						<li><a href="#">Smartphones</a></li>
-						<li><a href="#">Cameras</a></li>
-						<li><a href="#">Accessories</a></li>
+						<li class="active"><a href="{{url('/dashboard/')}}">Dashboard</a></li>
+						<li class="active"><a href="{{url('/')}}">Home</a></li>
+						@foreach($categories as $category)
+						<li><a href="{{url('/product-by-cat/'.$category->id)}}">{{$category->cat_name}}</a></li>
+						@endforeach
+
+						<li class=""><a href="{{url('/all-products')}}">All Products</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
