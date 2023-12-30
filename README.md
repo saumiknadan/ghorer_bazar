@@ -7,6 +7,7 @@ This repository contains the implementation of a simplified e-commerce platform 
 Create Category:
 Implemented a feature to add new product categories.
 Utilized Laravel form validation to ensure the correctness of input data.
+-  ![Create Category](images/cat1.png)
 2. Subcategory Management
 Create Subcategory:
 Designed a feature to create subcategories within existing categories.
@@ -23,7 +24,11 @@ Utilized slugs for SEO-friendly URLs.
 CRUD Functionality:
 Implemented full CRUD functionality for categories, subcategories, and products.
 Ensured proper handling of editing and deletion operations.
-Technology Stack
+6. Alert Messages
+
+This project incorporates alert messages to provide users with informative feedback. The following types of alert messages are implemented:
+
+## Technology Stack
 Laravel 8: Used the latest version of the Laravel framework for efficient and modern web development.
 
 Database (Eloquent ORM): Leveraged Laravel's Eloquent ORM for database interactions, ensuring a clean and expressive syntax.
